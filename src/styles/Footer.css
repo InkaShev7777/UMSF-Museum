@@ -17,8 +17,8 @@
   }
   
   .footer__logo-pic {
-    width: 150px;
-    height: 150px;
+    width: 130px;
+    height: 130px;
   }
   
   .footer__nav {
@@ -60,11 +60,14 @@
     line-height: 24px;
     color: #fff;
     text-decoration: none;
+    transition: .2s all linear;
+    cursor: pointer;
   }
   
   .footer__menu-icon {
     width: 20px;
     height: 20px;
+    transition: .2s all linear;
   }
   
   .footer__menu-link:hover {

@@ -1,7 +1,7 @@
 import '../styles/Header.css'
 
 import React, { useState, useEffect, useRef } from 'react';
-
+import { Link } from 'react-router-dom';
 export const Header = () => {
   
 
@@ -11,19 +11,31 @@ export const Header = () => {
         <img className='main_logo' src="resources/img/umsf-logo.png" alt="logo" />
 
         <h1 className='title'>Музей Університету митної справи та фінансів</h1>
-      <ul className='categories'>
-            <li className='category'>Головна</li>
-            <li className='category'>
+        <nav>
+        <ul className='categories'>
+          <li className='category'>
+            <Link className="category-link" to='/'>Головна</Link>
+          </li>
+            <li className='category-link'>
               Про музей &#9662;
               <ul className='sub_categories'>
-                <li className='sub_category'>Історія створення музею</li>
-                <li className='sub_category'>Наші експозиції</li>
+                <li className='sub_category'>
+                  <Link className="sub_category-link" to='/history'>Історія створення музею</Link>
+                </li>
+                <li className='sub_category'>
+                  <Link className="sub_category-link" to='/exposition'>Наші експозиції</Link>
+                </li>
               </ul>
             </li>
-            <li className='category'>Голерея</li>
-            <li className='category'>Відвідувачу</li>
-            <li className='category'>Контакти</li>
+            <li className='category'>
+              <Link className="category-link" to='/gallery'>Голерея</Link>
+            </li>
+            <li className='category'>
+              <Link className="category-link" to='/visitor'>Відвідувачу</Link>
+            </li>
+            <li className='category-link'>Контакти</li>
         </ul>
+        </nav>
       </div>
     </header>
   )
