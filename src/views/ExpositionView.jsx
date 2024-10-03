@@ -1,9 +1,16 @@
 import React, { useState } from "react";
 import { Header } from "../components/Header";
 import { Footer } from "../components/Footer";
+import { useNavigate } from "react-router-dom";
 import "../styles/Exposition.css";
 
 export const ExpositionView = () => {
+  const navigate = useNavigate();
+
+  const handleMoreExposition = (idExposition) => {
+    navigate(`/expositons/${idExposition}`);
+  };
+
   const [selectedId, setSelectedId] = useState(-1);
   const expositions = [
     { id: 0, src: "http://umsf.dp.ua/images/Ekspozytsiyi/main/5.jpg", desc: "Експозиція сучасних і колишніх технічних засобів митного контролю в Україні – балконна зала" },
@@ -30,6 +37,13 @@ export const ExpositionView = () => {
     { id: 21, src: "http://umsf.dp.ua/images/Ekspozytsiyi/19/main.jpg", desc: "Перманентна виставка в центральному холі УМСФ"},
   ];
 
+  const openMoreInfoWindow = (idCard) => {
+    if(idCard >= 0) {
+      console.log("ID Now: " + idCard);
+      
+    }
+  }
+
   return (
     <div>
       <Header />
@@ -42,14 +56,19 @@ export const ExpositionView = () => {
           
           {expositions.map((item) => (
             <div className="exposition-cards">
-              <div className="exposition-card" onClick={() => { setSelectedId(item.id) }}>
-              <div className="exposition-card-pic">
-                <img className="exposition-img" src={item.src} alt="" />
+              <div className="exposition-card" onClick={() => { handleMoreExposition(item.id) }}>
+                <div className="exposition-card-pic">
+                  <img className="exposition-img" src={item.src} alt="" />
+                </div>
+                <div className="container-description">
+                  <p className="explorer-description">{item.desc}</p>
+                </div>
               </div>
-              <div className="container-description">
-                <p className="explorer-description">{item.desc}</p>
-              </div>
-            </div>
+
+              {item.id >= 3 && item.id <= 5 ? <hr/>: <div/>}
+
+              {item.id >= 6 && item.id <= 8 ? <hr/>: <div/>}
+
             </div>
           ))}
 

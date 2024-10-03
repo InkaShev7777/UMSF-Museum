@@ -8,7 +8,7 @@ export const Header = () => {
   return (
     <header>
       <div className='main_div'>
-        <img className='main_logo' src="resources/img/umsf-logo.png" alt="logo" />
+        <img className='main_logo' src="../resources/img/umsf-logo.png" alt="logo" />
 
         <h1 className='title'>Музей Університету митної справи та фінансів</h1>
         <nav>

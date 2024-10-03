@@ -10,7 +10,7 @@ export const Footer = () => {
                 <div className="wrapper">
                     <div className="footer__item">
                         <div className="footer__logo">
-                            <img src="resources/img/umsf-logo.png" alt="" />
+                            <img src="../resources/img/umsf-logo.png" alt="" />
                             <h3 className='footer__title'>МУЗЕЙ УНІВЕРСИТЕТУ МИТНОЇ СПРАВИ ТА ФІНАНСІВ</h3>
                         </div>
                         <nav className='footer__nav'>
