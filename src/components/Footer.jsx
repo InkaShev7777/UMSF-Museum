@@ -1,6 +1,7 @@
 import React from 'react'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUser } from "@fortawesome/free-solid-svg-icons";
+import { Link } from 'react-router-dom';
 import '../styles/Footer.css'
 
 export const Footer = () => {
@@ -10,7 +11,9 @@ export const Footer = () => {
                 <div className="wrapper">
                     <div className="footer__item">
                         <div className="footer__logo-container">
-                            <img className='footer-logo' src="../resources/img/logo.png" alt="" />
+                            <Link className="category-link" to='/'>
+                                <img className='footer-logo' src="../resources/img/logo.png" alt="" />
+                            </Link>
                             <h3 className='footer__title'>МУЗЕЙ УНІВЕРСИТЕТУ МИТНОЇ СПРАВИ ТА ФІНАНСІВ</h3>
                         </div>
                         <nav className='footer__nav'>
@@ -21,11 +24,11 @@ export const Footer = () => {
                                     </h3>
                                 </li>
                                 <li className="footer__menu-item">
-                                    <p className="footer__menu-link">+38(056)-785-92-78</p>
+                                    <p className="footer__menu-link">+38(056) 756-05-00</p>
                                 </li>
 
                                 <li className="footer__menu-item">
-                                    <p className="footer__menu-link">+38(095)-110-65-26</p>
+                                    <p className="footer__menu-link">+38(066) 510-01-35</p>
                                 </li>
 
                                 <li className="footer__menu-item">

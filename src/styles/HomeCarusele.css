@@ -1,0 +1,15 @@
+.gallery-space {
+    padding: 10px;
+    padding-top: 60px;
+}
+
+.home-carusele_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-carusele {
+    width: 1000px;
+    height: fit-content;
+}

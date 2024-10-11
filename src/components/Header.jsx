@@ -1,6 +1,6 @@
 import '../styles/Header.css'
 
-import React, { useState, useEffect, useRef } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 export const Header = () => {
   
@@ -8,8 +8,9 @@ export const Header = () => {
   return (
     <header>
       <div className='main_div'>
-        <img className='main_logo' src="../resources/img/logo.png" alt="logo" />
-
+        <Link className="category-link" to='/'>
+          <img className='main_logo' src="../resources/img/logo.png" alt="logo" />
+        </Link>
         <h1 className='title'>Музей Університету митної справи та фінансів</h1>
         <nav>
         <ul className='categories'>
@@ -37,10 +38,10 @@ export const Header = () => {
               Контакти &#9662;
             <ul className='sub_categories'>
                 <li className='sub_category'>
-                  <p className="sub_category-link" >+38(056)-785-92-78</p>
+                  <p className="sub_category-link" >+38(056) 756-05-00</p>
                 </li>
                 <li className='sub_category'>
-                  <p className="sub_category-link">+38(095)-110-65-26</p>
+                  <p className="sub_category-link">+38(066) 510-01-35</p>
                 </li>
               </ul>
             </li>
