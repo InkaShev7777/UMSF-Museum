@@ -37,10 +37,10 @@ export const Header = () => {
               Контакти &#9662;
             <ul className='sub_categories'>
                 <li className='sub_category'>
-                  <p className="sub_category-link" >+38(056)-785-92-78</p>
+                  <p className="sub_category-link" >+38(056) 756-05-00</p>
                 </li>
                 <li className='sub_category'>
-                  <p className="sub_category-link">+38(095)-110-65-26</p>
+                  <p className="sub_category-link">+38(066) 510-01-35</p>
                 </li>
               </ul>
             </li>

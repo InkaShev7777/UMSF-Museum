@@ -21,11 +21,11 @@ export const Footer = () => {
                                     </h3>
                                 </li>
                                 <li className="footer__menu-item">
-                                    <p className="footer__menu-link">+38(056)-785-92-78</p>
+                                    <p className="footer__menu-link">+38(056) 756-05-00</p>
                                 </li>
 
                                 <li className="footer__menu-item">
-                                    <p className="footer__menu-link">+38(095)-110-65-26</p>
+                                    <p className="footer__menu-link">+38(066) 510-01-35</p>
                                 </li>
 
                                 <li className="footer__menu-item">
