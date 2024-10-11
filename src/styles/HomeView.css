@@ -1,0 +1,15 @@
+.main-div {
+    height: 100%;
+}
+
+.all-posters {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.all-news {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

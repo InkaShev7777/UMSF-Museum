@@ -1,0 +1,83 @@
+header {
+    width: 100%;
+    background-color: rgba(11,46,46,255);
+}
+
+.main_div {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.main_logo {
+    width: 120px;
+    height: 100px;
+    margin-left: 50px;
+    margin-right: 30px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.title {
+    font-size: 21px;
+    font-weight: 200;
+    color: white;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.categories {
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+    align-items: center;
+    list-style-type: none;
+}
+
+.sub_categories {
+    display: flex;
+    position: absolute;
+    list-style-type: none;
+    background-color: rgba(11,46,46,255);
+    padding: 15px;
+    margin-top: 0px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    display: none;
+}
+
+.sub_category-link {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 15px;
+    color:rgba(223,182,67,255) ;
+    transition: .2s all linear;
+    text-decoration: none;
+}
+
+.sub_category-link:hover {
+    color: white;
+}
+
+.categories .category-link:hover>.sub_categories {
+    display: block;
+  }
+
+.category-link {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color:rgba(223,182,67,255);
+    transition: .2s all linear;
+    text-decoration: none;
+}
+
+.sub_category {
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+.category-link:hover {
+    color: gray;
+    cursor: pointer;
+}
