@@ -17,7 +17,7 @@ export const GalleryView = () => {
     <div>
         <Header/>
 
-        <div className='title-container'>
+        <div className='gallery-title-container'>
             <h1 className='title-gallery'>Гaлерея</h1>
         </div>
         <div className='gallery-container'>

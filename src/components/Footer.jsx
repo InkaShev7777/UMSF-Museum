@@ -9,8 +9,8 @@ export const Footer = () => {
             <div className="footer">
                 <div className="wrapper">
                     <div className="footer__item">
-                        <div className="footer__logo">
-                            <img src="../resources/img/umsf-logo.png" alt="" />
+                        <div className="footer__logo-container">
+                            <img className='footer-logo' src="../resources/img/logo.png" alt="" />
                             <h3 className='footer__title'>МУЗЕЙ УНІВЕРСИТЕТУ МИТНОЇ СПРАВИ ТА ФІНАНСІВ</h3>
                         </div>
                         <nav className='footer__nav'>

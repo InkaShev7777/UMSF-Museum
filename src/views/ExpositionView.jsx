@@ -76,6 +76,7 @@ export const ExpositionView = () => {
       </div>
 
       <Footer />
+      
     </div>
   );
 };

@@ -8,15 +8,15 @@
     flex-wrap: wrap;
   }
   
-  .footer__logo {
+  .footer__logo-container {
     width: 44%;
     display: flex;
     align-items: center;
     margin-left: 20px;
   }
   
-  .footer__logo-pic {
-    width: 130px;
+  .footer-logo {
+    width: 160px;
     height: 130px;
   }
   

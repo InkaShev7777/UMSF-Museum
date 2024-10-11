@@ -7,7 +7,7 @@ export const HomeView = () => {
   return (
     <div>
       <Header/>
-      <h1>Home Page</h1>
+      <h1>Головна</h1>
         <div className='all-posters'>
           <h1>Posters DIV</h1>
         </div>
